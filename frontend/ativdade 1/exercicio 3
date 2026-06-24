@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Funcionalidades</title>
+</head>
+<body>
+    <h1>Funcionalidades do Sistema</h1>
+
+    <ul>
+        <li>Cadastro de usuários</li>
+        <li>Envio de avisos</li>
+        <li>Controle de mensalidades</li>
+        <li>Horário das aulas</li>
+        <li>Matrícula digital</li>
+    </ul>
+</body>
+</html>

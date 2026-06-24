@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Escolar</title>
+</head>
+<body>
+    <h1>Sistema Escolar</h1>
+
+    <h2>Avisos</h2>
+    <p>Acompanhe os comunicados escolares.</p>
+
+    <h2>Tarefas</h2>
+    <p>Verifique as atividades e prazos de entrega.</p>
+
+    <h2>Usuários</h2>
+    <p>Administre professores, alunos e funcionários.</p>
+</body>
+</html>

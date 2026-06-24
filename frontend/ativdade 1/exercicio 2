@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Problemas</title>
+</head>
+<body>
+    <h1>Problemas escolares</h1>
+
+    <h2>Avisos Perdidos</h2>
+    <p>Muitos alunos não conseguem acompanhar todos os avisos da escola.</p>
+
+    <h2>Tarefas Esquecidas</h2>
+    <p>Algumas atividades acabam sendo esquecidas por falta de organização.</p>
+
+    <h2>Comunicação</h2>
+    <p>Um sistema pode melhorar a comunicação entre alunos e professores.</p>
+</body>
+</html>
