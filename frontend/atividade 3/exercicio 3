@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva de Espaço</title>
+</head>
+<body>
+  <h1>Reservar Espaço da Escola</h1>
+  <form>
+    <label for="responsavel">Nome do Responsável:</label><br>
+    <input type="text" id="responsavel" name="responsavel" placeholder="Quem está reservando?"><br><br>
+
+    <label for="turma">Turma:</label><br>
+    <input type="text" id="turma" name="turma" placeholder="Ex: 1º Ano A"><br><br>
+
+    <label for="horario">Horário do Uso:</label><br>
+    <input type="time" id="horario" name="horario"><br><br>
+
+    <button type="submit">Solicitar Reserva</button>
+  </form>
+</body>
+</html>

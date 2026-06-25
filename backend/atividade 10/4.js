@@ -1,0 +1,1 @@
+console.log("Olá, Equipe de Desenvolvimento! Vamos construir um excelente projeto juntos.");

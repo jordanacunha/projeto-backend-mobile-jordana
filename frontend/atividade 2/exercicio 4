@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria do Projeto</title>
+</head>
+<body>
+  <h1>Etapas do Desenvolvimento</h1>
+
+  <h3>1. Esboço Inicial</h3>
+  <img src="https://www.shutterstock.com/image-vector/hand-drawn-website-layouts-doodle-260nw-394640050.jpg" alt="Desenho feito à mão em um papel mostrando o layout do site">
+  <p>Este é o primeiro desenho que fizemos para planejar onde cada botão e texto ficaria na tela.</p>
+
+  <h3>2. Código Estruturado</h3>
+  <img src="https://neilpatel.com/wp-content/uploads/2019/09/codigos-html-para-paginas-web-1.webp" alt="Tela de um editor de código exibindo tags HTML">
+  <p>Aqui está a nossa primeira versão do código HTML sendo escrita no editor.</p>
+</body>
+</html>

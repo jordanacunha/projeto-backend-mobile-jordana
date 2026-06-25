@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página</title>
+</head>
+<body>
+  <h1>Bem-vindo ao Nosso Projeto</h1>
+  <p>Quer conhecer quem está desenvolvendo essa solução?</p>
+  
+  <p>Clique aqui para conhecer a nossa <a href="equipe.html">Equipe de Desenvolvimento</a>.</p>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Projeto: Sistema de Organização Escolar (InovaEducacional)");

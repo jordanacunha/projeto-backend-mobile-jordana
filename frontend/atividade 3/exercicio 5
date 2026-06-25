@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato Coordenação</title>
+</head>
+<body>
+  <h1>Falar com a Coordenação</h1>
+  <form>
+    <label for="assunto">Assunto:</label><br>
+    <select id="assunto" name="assunto">
+      <option value="duvida">Dúvida sobre Notas</option>
+      <option value="justificativa">Justificativa de Falta</option>
+      <option value="sugestao">Sugestão ou Reclamação</option>
+      <option value="outro">Outros assuntos</option>
+    </select><br><br>
+
+    <label for="mensagem">Sua Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva detalhadamente o que precisa..."></textarea><br><br>
+
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+</body>
+</html>

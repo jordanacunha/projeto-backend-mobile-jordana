@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nova Tarefa</title>
+</head>
+<body>
+  <h1>Cadastrar Tarefa Escolar</h1>
+  <form>
+    <label for="titulo-tarefa">Título da Tarefa:</label><br>
+    <input type="text" id="titulo-tarefa" name="titulo-tarefa" placeholder="Ex: Estudar para Matemática"><br><br>
+
+    <label for="desc-tarefa">Descrição / Detalhes:</label><br>
+    <textarea id="desc-tarefa" name="desc-tarefa" rows="4" placeholder="Anote aqui os detalhes da tarefa..."></textarea><br><br>
+
+    <label for="prioridade">Prioridade:</label><br>
+    <select id="prioridade" name="prioridade">
+      <option value="baixa">Baixa</option>
+      <option value="media">Média</option>
+      <option value="alta">Alta</option>
+    </select><br><br>
+
+    <button type="submit">Adicionar Tarefa</button>
+  </form>
+</body>
+</html>
