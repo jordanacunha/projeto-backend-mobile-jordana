@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 2</title>
+  <style>
+    .caixa-destaque {
+      border: 2px solid #4a5568; 
+      box-shadow: 5px 8px 30px rgba(187, 15, 221, 0.904); 
+      padding: 30px; 
+      margin: 40px auto;
+      max-width: 400px;
+      background-color: #ffffff;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa-destaque">
+    <h2>Comunicado aos pais e alunos</h2>
+    <p>O recesso escolar terá inicío no dia 11/07/2026 com retorno das aulas no dia 28/07/2026.</p>
+  </div>
+</body>
+</html>

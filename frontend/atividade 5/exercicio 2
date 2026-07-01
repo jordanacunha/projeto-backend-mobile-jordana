@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f7fafc; padding: 20px; }
+    
+    .container-cards {
+      display: flex;
+      gap: 15px;
+    }
+    .card-item {
+      flex: 1; 
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-cards">
+    <div class="card-item"><h3>Matemática</h3><p>Nota: 8.5</p></div>
+    <div class="card-item"><h3>História</h3><p>Nota: 9.0</p></div>
+    <div class="card-item"><h3>Geografia</h3><p>Nota: 7.5</p></div>
+    <div class="card-item"><h3>Química</h3><p>Nota: 8.0</p></div>
+  </div>
+</body>
+</html>

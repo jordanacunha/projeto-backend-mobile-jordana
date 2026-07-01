@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página exercio 1</title>
+  <style>
+    body {
+      background-color: #cf58d3d5;
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center; 
+      color: #ffffff;
+    }
+    button {
+      background-color: #6c058b;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo a Página</h1>
+  <button>Clique Aqui</button>
+</body>
+</html>

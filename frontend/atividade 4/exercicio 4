@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 4</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #db9eff;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .btn-interativo {
+      background-color: #7c1bbd; 
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; 
+    }
+    
+    
+    .btn-interativo:hover {
+      background-color: #a057e4; 
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-interativo">Enviar Dados</button>
+</body>
+</html>

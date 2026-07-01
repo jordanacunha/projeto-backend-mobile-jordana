@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 5</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7fafc;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #1a202c;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
+    }
+    /* Títulos em destaque */
+    .titulo-aviso {
+      color: #e53e3e; /* Vermelho para chamar atenção */
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+    /* Parágrafos mais legíveis */
+    .texto-aviso {
+      color: #4a5568; /* Cinza escuro, menos cansativo que preto puro */
+      line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Avisos da Escolares</h1>
+
+  <h3 class="titulo-aviso">🚨 Manutenção no refeitório</h3>
+  <p class="texto-aviso">
+    Informamos que nesta quinta-feira o refeitório entrará em manutenção para troca de mesas e bancos. Pedimos para utilizarem a parte externa para as refeições.
+  </p>
+
+  <h3 class="titulo-aviso">📅 Feira de Ciências 2026</h3>
+  <p class="texto-aviso">
+    Estão abertas as inscrições para a nossa feira anual. Fale com o seu representante de turma e envie 
+    o escopo do projeto até o final desta semana. Não deixe para a última hora!
+  </p>
+</body>
+</html>
