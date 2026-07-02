@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 3</title>
+  <style>
+    .barra-superior {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6200e2;
+      color: white;
+      padding: 10px 20px;
+      font-family: sans-serif;
+    }
+    .btn-sair {
+      background-color: #f73bde;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="barra-superior">
+    <h2>Inova Educacional Portal</h2>
+    <button class="btn-sair">Sair do Sistema</button>
+  </div>
+</body>
+</html>

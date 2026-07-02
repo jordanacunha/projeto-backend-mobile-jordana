@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    table {
+      width: 100%;
+      border-collapse: collapse; 
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #846dd6;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #a699d4;
+      color: white;
+    }
+   
+    tr:nth-child(even) { background-color: #f7fafc; }
+  </style>
+</head>
+<body>
+  <h2>Lista de Presença</h2>
+  <table>
+    <tr>
+      <th>Nome do Aluno</th>
+      <th>Turma</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>Arthur Silva</td>
+      <td>1º Ano A</td>
+      <td>Presente</td>
+    </tr>
+    <tr>
+      <td>Beatriz Souza</td>
+      <td>1º Ano A</td>
+      <td>Ausente</td>
+    </tr>
+    <tr>
+      <td>Carlos Lima</td>
+      <td>2º Ano B</td>
+      <td>Presente</td>
+    </tr>
+  </table>
+</body>
+</html>

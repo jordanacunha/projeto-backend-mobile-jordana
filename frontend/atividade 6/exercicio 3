@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 3</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
+    .btn-acao {
+      display: inline-block;
+      background-color: #613197;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 25px; 
+      box-shadow: 0 4px 6px rgba(49, 151, 149, 0.2);
+      transition: all 0.2s ease;
+    }
+    .btn-acao:hover {
+      background-color: #a777b1;
+      transform: translateY(-2px); 
+    }
+  </style>
+</head>
+<body>
+  <p>Precisa de uma nova justificativa de faltas?</p>
+  <a href="#form-justificativa" class="btn-acao">Abrir Formulário</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 5</title>
+  <style>
+    body { font-family: sans-serif; background-color: #f7fafc; padding: 20px; }
+    
+    .mural-avisos {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap; 
+    }
+    .card-aviso {
+      flex: 1;
+      min-width: 250px; 
+      background-color: #fff;
+      padding: 20px;
+      border-left: 5px solid #5d1ada; 
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Mural de Avisos</h1>
+  
+  <div class="mural-avisos">
+    <div class="card-aviso">
+      <h3>⚠️ Atenção: Armários</h3>
+      <p>A limpeza geral dos armários do corredor central será realizada nesta sexta-feira.</p>
+    </div>
+    <div class="card-aviso">
+      <h3>📢 Horário do intervalo</h3>
+      <p>o intervalo terá um acréscimo de 5 minutos a acabará 10h5min.</p>
+    </div>
+    <div class="card-aviso">
+      <h3>🚀 Inscrições Olímpicas</h3>
+      <p>Prazo final para se inscrever na Olimpíada de Robótica estendido até o dia 15.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 5 - Dashboard Escolar</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #edf2f7; margin: 0; padding: 20px; }
+    
+    
+    .cards-resumo {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+    .card-resumo-item {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    
+    
+    .tabela-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    th {
+      background-color: #7b2bb0;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Painel do Coordenador</h1>
+
+  <div class="cards-resumo">
+    <div class="card-resumo-item">
+      <h3>150</h3>
+      <p style="color: #718096; margin: 0;">Alunos Ativos</p>
+    </div>
+    <div class="card-resumo-item">
+      <h3>12</h3>
+      <p style="color: #718096; margin: 0;">Professores</p>
+    </div>
+    <div class="card-resumo-item">
+      <h3>5</h3>
+      <p style="color: #718096; margin: 0;">Salas Reservadas Hoje</p>
+    </div>
+  </div>
+
+  <div class="tabela-container">
+    <h2>Últimos Espaços Solicitados</h2>
+    <table>
+      <tr>
+        <th>Espaço</th>
+        <th>Professor</th>
+        <th>Horário</th>
+      </tr>
+      <tr>
+        <td>Laboratório de Química</td>
+        <td>Prof. Renato</td>
+        <td>08:00 - 09:30</td>
+      </tr>
+      <tr>
+        <td>Auditório Central</td>
+        <td>Profª. Carla</td>
+        <td>10:00 - 11:30</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

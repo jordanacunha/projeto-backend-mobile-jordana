@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 4</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    
+    .layout-principal {
+      display: flex; 
+      height: 100vh;
+    }
+    .menu-lateral {
+      width: 200px;
+      background-color: #890fc2;
+      color: white;
+      padding: 20px;
+    }
+    .conteudo-pagina {
+      flex: 1;
+      padding: 30px;
+      background-color: #edf2f7;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout-principal">
+    <div class="menu-lateral">
+      <h3>Navegação</h3>
+      <p>Avisos</p>
+      <p>Minhas Notas</p>
+      <p>Calendário</p>
+    </div>
+    <div class="conteudo-pagina">
+      <h1>Área de Trabalho Principal</h1>
+      <p>Selecione uma opção no menu lateral para gerenciar suas informações escolares.</p>
+    </div>
+  </div>
+</body>
+</html>

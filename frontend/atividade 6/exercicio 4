@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 4</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f7fafc; max-width: 500px; margin: 0 auto; padding: 20px; }
+    .tarefa-card {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .status-badge {
+      background-color: #feebc8; 
+      color: #c05621;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Minhas Tarefas</h2>
+  
+  <div class="tarefa-card">
+    <span>Exercícios de Física</span>
+    <span class="status-badge">Pendente</span>
+  </div>
+
+  <div class="tarefa-card">
+    <span>Maquete de Geografia</span>
+    <span class="status-badge">Pendente</span>
+  </div>
+
+  <div class="tarefa-card">
+    <span>Leitura do livro do mês</span>
+    <span class="status-badge">Pendente</span>
+  </div>
+</body>
+</html>

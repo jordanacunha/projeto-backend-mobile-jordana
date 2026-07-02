@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #c1bbf3; padding: 20px; }
+    .card-aviso {
+      background-color: white;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border-left: 4px solid #8231ce; 
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+    .card-aviso h3 { margin-top: 0; color: #2d3748; }
+    .card-aviso p { color: #4a5568; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <h2>Mural Escolar</h2>
+
+  <div class="card-aviso">
+    <h3>📚 Devolução de Livros</h3>
+    <p>Todos os livros da biblioteca devem ser devolvidos até a próxima sexta-feira.</p>
+  </div>
+
+  <div class="card-aviso">
+    <h3>⚽ Torneio de Futebol</h3>
+    <p>Inscrições abertas para o campeonato interclasses.</p>
+  </div>
+
+  <div class="card-aviso">
+    <h3>🧪 Feira de Ciências</h3>
+    <p>Lembrete: a entrega do resumo do projeto é amanhã via portal.</p>
+  </div>
+</body>
+</html>
