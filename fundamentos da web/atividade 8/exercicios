@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 8</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f4f8;
+margin: 0;
+padding: 20px;
+}
+.container {
+max-width: 700px;
+margin: 0 auto;
+}
+.topo {
+text-align: center;
+background-color: #8427af;
+color: white;
+padding: 20px;
+border-radius: 8px;
+margin-bottom: 25px;
+}
+.bloco-resposta {
+padding: 20px;
+margin-bottom: 20px;
+}
+h2 {
+margin-top: 0;
+color: #2d3748;
+font-size: 18px;
+border-bottom: 2px solid #edf2f7;
+padding-bottom: 8px;
+}
+p {
+color: #4a5568;
+line-height: 1.6;
+}
+ul {
+margin: 10px 0;
+padding-left: 20px;
+color: #4a5568;
+}
+li {
+margin-bottom: 8px;
+}
+pre {
+background-color: #1a202c;
+color: #f7fafc;
+padding: 15px;
+border-radius: 6px;
+overflow-x: auto;
+font-family: 'Courier New', Courier, monospace;
+font-size: 14px;
+}
+.destaque {
+font-weight: bold;
+color: #2b6cb0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="topo">
+<h1>Atividade 8</h1>
+<p style="color: #e2e8f0; margin: 0;">Respostas</p>
+</div>
+
+<div class="bloco-resposta">
+<h2>Exercício 1: Exemplos de uso do método GET</h2>
+<p>O método GET é utilizado quando o navegador precisa buscar ou ler informações do servidor. Dois exemplos práticos são:</p>
+<ul>
+<li><strong>Visualização de Notas:</strong> Quando o aluno clica no botão "Ver Boletim" e o navegador solicita ao servidor as notas salvas no banco de dados.</li>
+<li><strong>Carregar o Mural:</strong> Quando você abre a página inicial do sistema e ele busca a lista com os últimos avisos cadastrados para exibir na tela.</li>
+</ul>
+</div>
+
+<div class="bloco-resposta">
+<h2>Exercício 2: Exemplos de uso do método POST</h2>
+<p>O método POST é utilizado quando o navegador precisa enviar dados novos para serem criados ou processados no servidor. Dois exemplos práticos são:</p>
+<ul>
+<li><strong>Tela de Login:</strong> Quando o usuário digita o e-mail e a senha e clica em "Entrar", enviando esses dados confidenciais para validação do servidor.</li>
+<li><strong>Cadastro de Tarefas:</strong> Quando um professor preenche um formulário com título, descrição e prazo de um trabalho e envia para salvar no sistema.</li>
+</ul>
+</div>
+
+<div class="bloco-resposta">
+<h2>Exercício 3: O que significa o Código de Status 404?</h2>
+<p>Significa Não Encontrado (Not Found). Isso indica que o navegador conseguiu se conectar ao servidor, mas o caminho (URL) que ele tentou acessar não existe. Isso acontece quando digitamos um endereço errado ou quando a página foi deletada do sistema.</p>
+</div>
+
+<div class="bloco-resposta">
+<h2>Exercício 4: O que acontece com o Status 201?</h2>
+<p>Significa Criado (Created). É a resposta padrão de sucesso enviada pelo servidor para confirmar que os dados enviados pelo navegador (geralmente via POST) foram recebidos sem erros e que um novo registro foi salvo com sucesso no banco de dados.</p>
+</div>
+
+<div class="bloco-resposta">
+<h2>Exercício 5: Requisição e Resposta HTTP (Cadastro de Aviso)</h2>
+
+
+<pre>
+# PEDIDO (Request) do navegador para o servidor:
+POST /avisos HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{
+"titulo": "Feira de Ciências 2026",
+"descricao": "Apresentação dos projetos no pátio central."
+}
+
+# RESPOSTA (Response) do servidor para o navegador:
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+"sucesso": true,
+"mensagem": "Aviso escolar cadastrado com sucesso!"
+}</pre>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Atividade 9 - Todos os Exercícios</title>
+</head>
+<body>
+
+<h2>Exercício 1: JSON de um Aviso Escolar</h2>
+<pre>
+{
+"id": 101,
+"titulo": "Reunião Geral de Pais",
+"data": "2026-08-15",
+"horario": "19:00",
+"local": "Auditório Principal",
+"importante": true
+}</pre>
+
+<hr>
+
+<h2>Exercício 2: JSON de uma Tarefa</h2>
+<pre>
+{
+"id": 45,
+"materia": "História",
+"titulo": "Resumo sobre Revolução Industrial",
+"dataEntrega": "2026-07-22",
+"prioridade": "alta",
+"concluida": false
+}</pre>
+
+<hr>
+
+<h2>Exercício 3: Pedido e Resposta de Login</h2>
+<pre>
+# PEDIDO (Request)
+POST /login HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{
+"email": "carlos@escola.com",
+"senha": "senhaSegura123"
+}
+
+# RESPOSTA (Response)
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+"autenticado": true,
+"mensagem": "Login realizado com sucesso!",
+"usuario": {
+"nome": "Carlos Eduardo",
+"perfil": "aluno"
+}
+}</pre>
+
+<hr>
+
+<h2>Exercício 4: Explicação do Código 201</h2>
+<p>O servidor usa o código 201 Created (Criado) porque ele é o status HTTP específico para indicar que a requisição funcionou com sucesso e resultou na criação de um novo registro no banco de dados.</p>
+<p>Isso diferencia essa ação de um código de status 200 OK comum, que é usado apenas para buscas ou atualizações de dados que já existiam.</p>
+
+<hr>
+
+<h2>Exercício 5: Passo a Passo do Cadastro de Usuário</h2>
+<p>O ciclo completo de troca de dados entre cliente e servidor funciona na seguinte ordem:</p>
+<ol>
+<li>O usuário preenche os campos do formulário (Nome, E-mail e Senha) no navegador.</li>
+<li>O usuário clica no botão de envio ("Cadastrar").</li>
+<li>O JavaScript do navegador captura os dados inseridos e converte-os para o formato JSON.</li>
+<li>O navegador envia uma requisição HTTP do tipo POST para a rota /usuarios do servidor levando esse JSON.</li>
+<li>O servidor recebe o pedido, valida as informações e faz a gravação no banco de dados.</li>
+<li>O servidor responde ao navegador com o status 201 Created e uma mensagem confirmando o sucesso.</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercícios Unificados</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f4f8;
+margin: 0;
+padding: 20px;
+}
+.container {
+max-width: 600px;
+margin: 0 auto;
+}
+.bloco {
+background: white;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+h2 {
+margin-top: 0;
+color: #2d3748;
+border-bottom: 2px solid #edf2f7;
+padding-bottom: 8px;
+}
+input, textarea {
+width: 100%;
+padding: 8px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 1px solid #cbd5e0;
+border-radius: 4px;
+}
+button {
+background-color: #af31ce;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+}
+button:hover {
+background-color: #af31ce;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="bloco">
+<h2>Botão Interativo</h2>
+<p>Clique no botão abaixo para disparar um evento.</p>
+<button id="meuBotao">Clique em mim!</button>
+</div>
+
+<div class="bloco">
+<h2>Lista de Tarefas</h2>
+<input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa escolar...">
+<button id="btnAdicionar">Adicionar</button>
+<ul id="listaTarefas" style="margin-top: 15px;"></ul>
+</div>
+
+<div class="bloco">
+<h2>Mostrar Nome do Aluno</h2>
+<input type="text" id="campoNome" placeholder="Digite o nome completo do aluno">
+<button id="btnMostrar">Confirmar Identidade</button>
+<p id="resultado" style="font-weight: bold; color: #2d3748; margin-top: 15px;"></p>
+</div>
+
+<div class="bloco">
+<h2>Validação de Campo</h2>
+<form id="meuFormulario">
+<label for="codigo">Código do Cartão Estudantil:</label>
+<input type="text" id="codigo" placeholder="Ex: 2026-XYZ">
+<button type="submit" style="margin-top: 10px;">Enviar Registro</button>
+</form>
+</div>
+
+<div class="bloco">
+<h2>Mural de Avisos Dinâmico</h2>
+<textarea id="textoAviso" rows="3" placeholder="Escreva o comunicado aqui..."></textarea>
+<button id="btnPublicar">Publicar no Mural</button>
+<div id="mural" style="margin-top: 15px;"></div>
+</div>
+
+</div>
+
+<script>
+const botao1 = document.querySelector('#meuBotao');
+botao1.addEventListener('click', () => {
+alert('Olá!');
+});
+
+
+const input2 = document.querySelector('#novaTarefa');
+const btn2 = document.querySelector('#btnAdicionar');
+const lista2 = document.querySelector('#listaTarefas');
+btn2.addEventListener('click', () => {
+const texto = input2.value.trim();
+if (texto !== '') {
+const li = document.createElement('li');
+li.textContent = texto;
+lista2.appendChild(li);
+input2.value = '';
+}
+});
+
+
+const campoNome3 = document.querySelector('#campoNome');
+const btn3 = document.querySelector('#btnMostrar');
+const resultado3 = document.querySelector('#resultado');
+btn3.addEventListener('click', () => {
+const nome = campoNome3.value.trim();
+resultado3.textContent = nome !== '' ? `Aluno ativo no sistema: ${nome}` : 'Por favor, insira um nome.';
+});
+
+
+const formulario4 = document.querySelector('#meuFormulario');
+const campoCodigo4 = document.querySelector('#codigo');
+formulario4.addEventListener('submit', (evento) => {
+evento.preventDefault();
+if (campoCodigo4.value.trim() === '') {
+alert('Aviso: Preenchimento obrigatório! O campo não pode ser enviado vazio.');
+} else {
+alert('Sucesso! Dados enviados para análise.');
+formulario4.reset();
+}
+});
+
+
+const textoAviso5 = document.querySelector('#textoAviso');
+const btnPublicar5 = document.querySelector('#btnPublicar');
+const mural5 = document.querySelector('#mural');
+btnPublicar5.addEventListener('click', () => {
+const mensagem = textoAviso5.value.trim();
+if (mensagem === '') {
+alert('Digite uma mensagem antes de publicar no mural.');
+return;
+}
+const caixaAviso = document.createElement('div');
+caixaAviso.innerHTML = `<p style="padding: 10px; background: #fffaf0; border-left: 4px solid #af31ce; margin-bottom: 8px;">${mensagem}</p>`;
+mural5.insertBefore(caixaAviso, mural5.firstChild);
+textoAviso5.value = '';
+});
+</script>
+</body>
+</html>
