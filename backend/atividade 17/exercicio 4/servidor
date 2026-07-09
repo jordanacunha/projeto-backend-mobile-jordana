@@ -1,0 +1,11 @@
+// Servidor padrão apenas para fins de teste quando estiver ligado
+const express = require('express');
+const cors = require('cors');
+const app = express();
+app.use(cors());
+
+app.get('/status', (req, res) => {
+  res.json({ online: true });
+});
+
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));

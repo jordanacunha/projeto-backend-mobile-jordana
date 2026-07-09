@@ -1,0 +1,14 @@
+<button id="btnAcessar">Acessar Rota Protegida</button>
+
+<script>
+  document.querySelector('#btnAcessar').addEventListener('click', async () => {
+    const resposta = await fetch('http://localhost:3000/dados-privados', {
+      method: 'GET',
+      headers: { 
+        'Authorization': 'token-enviado-aqui' 
+      }
+    });
+    const resultado = await resposta.json();
+    console.log(resultado);
+  });
+</script>

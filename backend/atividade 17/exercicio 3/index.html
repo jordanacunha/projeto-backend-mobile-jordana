@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Avisos</title>
+</head>
+<body>
+  <h1>Avisos do Sistema</h1>
+  <button id="carregar">Listar Avisos</button>
+  <ul id="lista"></ul>
+
+  <script>
+    document.querySelector('#carregar').addEventListener('click', async () => {
+      const lista = document.querySelector('#lista');
+      lista.innerHTML = ''; // Limpa a lista antes de adicionar
+
+      try {
+        const resposta = await fetch('http://localhost:3000/avisos');
+        const listaAvisos = await resposta.json();
+
+        listaAvisos.forEach(aviso => {
+          const item = document.createElement('li');
+          item.textContent = aviso.titulo;
+          lista.appendChild(item);
+        });
+      } catch (erro) {
+        alert('Erro ao buscar avisos do servidor.');
+      }
+    });
+  </script>
+</body>
+</html>

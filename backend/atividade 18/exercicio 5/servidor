@@ -1,0 +1,10 @@
+let tokensValidos = ['token-gerado-pelo-servidor']; // Lista de sessões ativas
+
+app.post('/logout', (req, res) => {
+  const tokenCliente = req.headers['authorization'];
+
+  // Remove o token recebido da lista de sessões ativas do servidor
+  tokensValidos = tokensValidos.filter(token => token !== tokenCliente);
+
+  res.json({ mensagem: 'Sessão encerrada com sucesso no servidor.' });
+});

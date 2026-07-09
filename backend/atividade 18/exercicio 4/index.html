@@ -1,0 +1,28 @@
+<button id="btnBuscar">Buscar Minhas Tarefas</button>
+<ul id="lista"></ul>
+
+<script>
+  document.querySelector('#btnBuscar').addEventListener('click', async () => {
+    // Busca o token que foi previamente salvo no localStorage
+    const tokenSalvo = localStorage.getItem('meu_token');
+
+    const resposta = await fetch('http://localhost:3000/tarefas', {
+      method: 'GET',
+      headers: { 
+        'Authorization': tokenSalvo // Envia o token guardado
+      }
+    });
+
+    const dados = await resposta.json();
+    const lista = document.querySelector('#lista');
+    lista.innerHTML = '';
+
+    if (resposta.ok) {
+      dados.forEach(tarefa => {
+        lista.innerHTML += `<li>${tarefa}</li>`;
+      });
+    } else {
+      lista.innerHTML = `<li>Erro: ${dados.mensagem}</li>`;
+    }
+  });
+</script>

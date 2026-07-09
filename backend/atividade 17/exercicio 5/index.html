@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback de Sistema</title>
+</head>
+<body>
+  <h1>Enviar Feedback</h1>
+  
+  <form id="formularioFeedback">
+    <input type="text" id="usuario" placeholder="Seu nome" required><br><br>
+    <textarea id="comentario" placeholder="Deixe seu comentário aqui" required></textarea><br><br>
+    <button type="submit">Enviar Formulário</button>
+  </form>
+
+  <p id="status"></p>
+
+  <script>
+    document.querySelector('#formularioFeedback').addEventListener('submit', async (event) => {
+      event.preventDefault(); // Evita o recarregamento automático do HTML padrão
+
+      const status = document.querySelector('#status');
+      const dados = {
+        usuario: document.querySelector('#usuario').value,
+        comentario: document.querySelector('#comentario').value
+      };
+
+      try {
+        const resposta = await fetch('http://localhost:3000/feedbacks', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(dados)
+        });
+
+        const resultado = await resposta.json();
+        status.textContent = resultado.mensagem;
+        status.style.color = 'green';
+        
+        // Limpa os campos do formulário após o sucesso
+        document.querySelector('#formularioFeedback').reset();
+      } catch (erro) {
+        status.textContent = 'Erro ao tentar enviar. Servidor fora do ar.';
+        status.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>

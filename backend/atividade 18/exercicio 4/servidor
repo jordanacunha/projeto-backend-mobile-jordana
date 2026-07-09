@@ -1,0 +1,14 @@
+const tokensValidos = ['token-gerado-pelo-servidor']; 
+
+const verificarToken = (req, res, next) => {
+  const token = req.headers['authorization'];
+  
+  if (!tokensValidos.includes(token)) {
+    return res.status(403).json({ mensagem: 'Token inválido ou expirado.' });
+  }
+  next();
+};
+
+app.get('/tarefas', verificarToken, (req, res) => {
+  res.json(['Estudar HTML', 'Estudar Express', 'Praticar LocalStorage']);
+});

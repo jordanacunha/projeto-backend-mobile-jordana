@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+</head>
+<body>
+  <h1>Cadastrar Usuário</h1>
+  <input type="text" id="nome" placeholder="Nome do usuário">
+  <input type="email" id="email" placeholder="E-mail do usuário">
+  <button id="enviar">Cadastrar</button>
+  <p id="resultado"></p>
+
+  <script>
+    document.querySelector('#enviar').addEventListener('click', async () => {
+      const dados = {
+        nome: document.querySelector('#nome').value,
+        email: document.querySelector('#email').value
+      };
+
+      try {
+        const resposta = await fetch('http://localhost:3000/usuarios', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(dados)
+        });
+        const retorno = await resposta.json();
+        document.querySelector('#resultado').textContent = retorno.mensagem;
+      } catch (erro) {
+        document.querySelector('#resultado').textContent = 'Erro ao conectar com o servidor.';
+      }
+    });
+  </script>
+</body>
+</html>

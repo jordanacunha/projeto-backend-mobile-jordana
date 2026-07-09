@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste de Conexão</title>
+</head>
+<body>
+  <h1>Verificar Status do Servidor</h1>
+  <button id="checar">Verificar</button>
+  <p id="mensagem"></p>
+
+  <script>
+    document.querySelector('#checar').addEventListener('click', async () => {
+      const mensagem = document.querySelector('#mensagem');
+      mensagem.textContent = ''; 
+
+      try {
+        const resposta = await fetch('http://localhost:3000/status');
+        if (!resposta.ok) throw new Error(); // Se o status HTTP for erro, pula pro catch
+        
+        mensagem.textContent = 'Servidor respondendo normalmente!';
+        mensagem.style.color = 'green';
+      } catch (erro) {
+        // Captura o erro se o servidor estiver completamente offline
+        mensagem.textContent = 'Erro: O servidor não respondeu ou está desligado.';
+        mensagem.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>

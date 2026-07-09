@@ -1,0 +1,20 @@
+<button id="btnSair">Sair do Sistema</button>
+<p id="msg"></p>
+
+<script>
+  document.querySelector('#btnSair').addEventListener('click', async () => {
+    const tokenSalvo = localStorage.getItem('meu_token');
+
+    const resposta = await fetch('http://localhost:3000/logout', {
+      method: 'POST',
+      headers: { 'Authorization': tokenSalvo }
+    });
+
+    const dados = await resposta.json();
+
+    // Remove também o token do navegador local (localStorage)
+    localStorage.removeItem('meu_token');
+
+    document.querySelector('#msg').textContent = dados.mensagem + ' Token local removido.';
+  });
+</script>

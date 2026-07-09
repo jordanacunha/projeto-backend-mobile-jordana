@@ -1,0 +1,15 @@
+// Middleware de validação
+const verificarToken = (req, res, next) => {
+  const token = req.headers['authorization'];
+
+  if (!token) {
+    return res.status(401).json({ mensagem: 'Acesso negado. Token ausente.' });
+  }
+
+  next(); // Permite que a requisição continue para a rota
+};
+
+// Aplicação do middleware em uma rota qualquer
+app.get('/dados-privados', verificarToken, (req, res) => {
+  res.json({ protegido: 'Dados confidenciais aqui' });
+});

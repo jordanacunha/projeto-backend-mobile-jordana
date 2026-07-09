@@ -1,0 +1,7 @@
+let usuarios = [];
+
+app.post('/usuarios', (req, res) => {
+  const novoUsuario = { nome: req.body.nome, email: req.body.email };
+  usuarios.push(novoUsuario);
+  res.status(201).json({ mensagem: `Usuário ${novoUsuario.nome} criado!` });
+});

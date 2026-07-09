@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nova Tarefa</title>
+</head>
+<body>
+  <h1>Nova Tarefa</h1>
+  <input type="text" id="descricao" placeholder="Descrição da tarefa">
+  <button id="enviar">Salvar</button>
+  <p id="resultado"></p>
+
+  <script>
+    document.querySelector('#enviar').addEventListener('click', async () => {
+      const dados = { descricao: document.querySelector('#descricao').value };
+
+      try {
+        const resposta = await fetch('http://localhost:3000/tarefas', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(dados)
+        });
+        const retorno = await resposta.json();
+        document.querySelector('#resultado').textContent = retorno.mensagem;
+      } catch (erro) {
+        document.querySelector('#resultado').textContent = 'Erro ao conectar com o servidor.';
+      }
+    });
+  </script>
+</body>
+</html>
