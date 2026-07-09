@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 4</title>
+</head>
+<body>
+
+  <h2>Exercício 4: Localização da tela de login e do servidor</h2>
+  <p>A tela de login (arquivo HTML/CSS/JS visível para o usuário) ficaria localizada dentro da pasta "frontend/".</p>
+  <p>O servidor (arquivo JavaScript responsável por rodar o Express e processar as requisições) ficaria localizado dentro da pasta "servidor/" ou "backend/".</p>
+
+</body>
+</html>
